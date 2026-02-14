@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #ffe0e9, #ff9aa2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 90%;
+    max-width: 360px;
+    box-shadow: 0 20px 50px rgba(255, 77, 109, 0.4);
+    animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff2e63;
+    font-size: 32px;
+    text-shadow: 0 0 12px #ff9aa2;
+}
+
+.subtext {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px 26px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 600;
+}
+
+#yes {
+    background: #ff4d6d;
+    color: white;
+    box-shadow: 0 0 20px #ff4d6d;
+    transition: transform 0.2s;
+}
+
+#yes:hover {
+    transform: scale(1.15);
+}
+
+#no {
+    background: #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    box-shadow: 0 0 20px pink;
+}
+
+.message {
+    margin-top: 15px;
+    color: #555;
+    font-size: 15px;
+}
+
+/* BIG FAST HEARTS */
+.heart {
+    position: fixed;
+    font-size: 40px;
+    animation: floatUp 1.8s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-350px) scale(1.6);
+        opacity: 0;
+    }
+}
